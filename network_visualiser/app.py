@@ -71,9 +71,8 @@ def get_device_category(ip, mac, hostname):
 
     # Check if it's completely useless info — then classify as 'Other' (for the show)
     if mac_cleaned in ["unknown", "", "ff:ff:ff:ff:ff:ff"] and h in ["", "unknown", "localhost"]:
-        return "Other"  # Just a placeholder for professor to see
-
-    # Everything else goes into the big happy "Device" bucket
+        return "Other" 
+        
     return "Device"
 
 def get_network_io():
@@ -182,4 +181,5 @@ def scan():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5050, debug=True)
+
 
