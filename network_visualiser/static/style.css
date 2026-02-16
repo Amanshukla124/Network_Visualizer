@@ -166,10 +166,6 @@ body::before {
     background: rgba(255, 255, 255, 0.15);
 }
 
-.info-area {
-    margin-top: 30px;
-}
-
 #stats {
     display: flex;
     justify-content: center;
@@ -187,7 +183,6 @@ body::before {
 
 .detail-panel {
     position: fixed;
-    top: 0;
     left: -400px;
     width: 400px;
     height: 100%;
@@ -195,3 +190,4 @@ body::before {
     overflow-y: auto;
     transition: left 0.3s;
 }
+
